@@ -3,8 +3,10 @@ console.log(numAleatorio);
 const mensaje = document.querySelector(".mensaje");
 const botonRespuesta = document.querySelector(".adivinar");
 const numeroRespuesta = document.querySelector(".numero");
-
 const respuesta = () => {
+  if (numeroRespuesta.value > numeroRespuesta.max) {
+    numeroRespuesta.value = 10;
+  }
   if (numeroRespuesta.value < numAleatorio) {
     mensaje.classList.add("error");
     mensaje.textContent = "pringat, t'has quedat curt";
