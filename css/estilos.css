@@ -39,6 +39,9 @@ button {
   color: #fff;
   height: 35px;
 }
+button:disabled {
+  background: #dddddd;
+}
 input {
   border: 0;
   height: 35px;
