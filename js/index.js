@@ -4,7 +4,8 @@ const mensaje = document.querySelector(".mensaje");
 const botonRespuesta = document.querySelector(".adivinar");
 const numeroRespuesta = document.querySelector(".numero");
 const respuesta = () => {
-  if (numeroRespuesta.value > numeroRespuesta.max) {
+  const numeroMaximoValor = parseInt(numeroRespuesta.value, 10);
+  if (numeroMaximoValor > numeroRespuesta.max) {
     numeroRespuesta.value = 10;
   }
   if (numeroRespuesta.value < numAleatorio) {
